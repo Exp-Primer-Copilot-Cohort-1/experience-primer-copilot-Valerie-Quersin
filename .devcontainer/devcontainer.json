@@ -1,0 +1,11 @@
+{
+  "name": "Dev Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:0-focal",
+  "extensions": [
+    "GitHub.copilot"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y curl"
+}
